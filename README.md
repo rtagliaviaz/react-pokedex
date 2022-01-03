@@ -3,5 +3,5 @@
 
 
 ## Demo
-http://robjs.me/PokeTracker/#/
+https://rtagliaviaz.github.io/react-pokedex
 
