@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 
 //components
 import Pokemons from "./components/Pokemons.tsx";
@@ -11,7 +11,7 @@ import PokemonInfo from "./components/PokemonInfo.tsx";
 const App = () => {
   return (
     <>
-    <BrowserRouter>
+    <HashRouter>
     <Navbar />
       <Switch>
 
@@ -19,7 +19,7 @@ const App = () => {
 
         <Route path='/details/:id' component={PokemonInfo} />
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
     </>
   );
 };
