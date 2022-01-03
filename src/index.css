@@ -1,0 +1,422 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #292a2d; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.catchedTracker{
+  display: flex;
+  margin-left: 50px;
+  justify-content: left;
+}
+
+.pokeballSpriteCounter {
+  width: 6%;
+  margin-right: 40px;
+}
+
+.pokeballCounter{
+  width: 5%;
+  margin-right: 40px;
+}
+
+.pokemons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  
+}
+
+.pokemon {
+  width: 100px;
+  margin: 0 1px;
+  text-align: center;
+}
+
+.pokeImg {
+  width: 80px;
+  padding: 10px;
+  /* background-color: black; */
+}
+
+.pokeballImg{
+  /* background-color: red; */
+  padding: 25px;
+  width: 50px;
+  outline: 1px solid red;
+}
+
+.pokeSprites{
+  width: 100px;
+}
+
+.pokeballSprite {
+  padding: 30px;
+  width: 40px;
+  outline: 1px solid red;
+}
+
+nav {
+  background-color: red;
+  color: white;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0;
+}
+
+li {
+  margin: 0 20px;
+  font-weight: bold;
+  
+}
+
+.nav-links{
+  display: flex;
+}
+
+.catched {
+  display: none;
+}
+
+.nav-links button{
+  background-color: red;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.navTitle {
+  text-decoration: none;
+  color: white;
+}
+.darkMode {
+  height: 20px;
+}
+
+.darkMode img{
+  display: block;
+  height: 25px;
+  margin-right: 50px;
+}
+.dropbtn {
+  margin-right: 10px;
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content .Link {
+  color: white;
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content .Link {
+  background-color:red;
+  border: none; 
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/* .dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+} */
+
+
+.nav-links Link{
+  cursor: pointer;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.center {
+  text-align: center
+}
+
+.centerSpinner {
+  margin-top: 50px;
+}
+
+.spritesButton {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.spritesButton button{
+  border: 1px solid white;
+  border-radius: 5px;
+  outline: none;
+  background-color: red;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* mobile*/
+@media only screen and (min-width: 320px) and (max-width: 540px) {
+
+  body {
+    background-color: #23292f; /*dark*/
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #1c2228;
+    /* outline: 0.1px solid #c4d2e1; */
+    color: #c4d2e1;
+    font-size: 12px;
+  }
+  .navTitle {
+    color: #c4d2e1;
+  }
+
+  .dropdown .dropbtn {
+    color: #c4d2e1;
+  }
+  
+  .nav-links button {
+    font-size: 12px;
+    margin-left: 20px;
+    background-color: #1c2228;
+  }
+
+  .nav-links button:focus,
+  .nav-links button:active {
+    border: none;
+    outline: none;
+  }
+
+  .dropdown-content .Link {
+    background-color:#1c2228;
+    border: none; 
+    color: #c4d2e1;
+    font-size: 12px;
+  }
+
+  li {
+    margin: 0 4px;
+  }
+
+  .catchedTracker {
+    display: none;
+  }
+
+  .catched {
+    display: block;
+
+  }
+
+  .pokeballNav{
+    width: 20px;
+    height: auto;
+    /* margin-right: 10px; */
+    /* background-color: red; */
+  }
+
+  .darkMode img {
+    margin-right: 25px;
+    height: 25px;
+    margin-top: -7px;
+  }
+
+  .spritesButton button{
+    border: none;
+    outline: 1px solid #c4d2e1;
+    background-color: #1c2228;
+    color: #c4d2e1;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .pokemonsContainer{
+    margin-top: 50px;
+  }
+
+  .pokemons{
+    margin-top: 20px;
+  }
+  
+  .pokemon {
+    width: 72px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .pokeImg {
+    width: 50px;
+    padding: 10px;
+    /* background-color: black; */
+  }
+  
+  .pokeballImg{
+    /* background-color: red; */
+    /* background-color: #c4d2e1; */
+    outline: 1px solid #c4d2e1;
+    padding: 20px;
+    width: 30px;
+  }
+  
+  .pokeSprites{
+    width: 68px;
+    padding: 1px;
+    /* background-color: black; */
+  }
+  
+  .pokeballSprite {
+    /* background-color: #c4d2e1; */
+    outline: 1px solid #c4d2e1;
+    padding: 15px;
+    width: 40px;
+    /* background-color: red; */
+  }
+}
+
+/*tablets*/
+@media only screen and (min-width: 541px) and (max-width: 1024px) {
+  /* body {
+    background-color: #23292f; 
+  } */
+
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1c2228;
+    /* outline: 0.1px solid #c4d2e1; */
+    color: #c4d2e1;
+  }
+  .navTitle {
+    color: #c4d2e1;
+  }
+  
+  .nav-links button {
+    background-color: #1c2228;
+  }
+
+  .nav-links button:focus,
+  .nav-links button:active {
+    border: none;
+    outline: none;
+  }
+
+  .dropdown-content .Link {
+    background-color:#1c2228;
+    border: none; 
+  }
+
+  li {
+    margin: 0 4px;
+  }
+
+  .catchedTracker {
+    display: none;
+  }
+
+  .catched {
+    display: block;
+    margin-right: 26px;
+  }
+
+  .spritesButton button{
+    margin-top: 10px;
+    border: none;
+    height: 40px;
+    outline: 1px solid #c4d2e1;
+    background-color: #1c2228;
+    color: #c4d2e1;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .pokemonsContainer{
+    margin-top: 50px;
+  }
+
+  .pokemons{
+    margin-top: 20px;
+  }
+  
+  .pokemon {
+    width: 95px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .pokeImg {
+    width: 79px;
+    height: 80px;
+    padding: 7px;
+    /* outline: 1px solid white; */
+    /* background-color: white; */
+  }
+  
+  .pokeballImg{
+    /* background-color: red; */
+    /* background-color: #c4d2e1; */
+    outline: none;
+    border: 1px solid #c4d2e1;
+    padding: 30px;
+    width: 30px;
+    height: 32px;
+  }
+  
+  .pokeSprites{
+    width: 91px;
+    padding: 1px;
+    /* background-color: white; */
+  }
+  
+  .pokeballSprite {
+    /* background-color: #c4d2e1; */
+    border: 1px solid #c4d2e1;
+    outline: none;
+    padding: 26px;
+    width: 38px;
+    height: 39px;
+    /* background-color: red; */
+  }
+}
